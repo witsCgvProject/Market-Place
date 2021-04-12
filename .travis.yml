@@ -1,3 +1,9 @@
+language: node_js
+node_js:
+  - "stable"
+  script: gulp travis
+
+
 # language: android
 # jdk: oraclejdk8
 
@@ -29,22 +35,22 @@
 
 
 
-language: node_js
-node_js:
-  - 11.6.0
-cache: yarn
+# language: node_js
+# node_js:
+#   - 11.6.0
+# cache: yarn
 
-install: 
-  - yarn install
+# install: 
+#   - yarn install
 
-script: 
-  - yarn test
-  - yarn run build
+# script: 
+#   - yarn test
+#   - yarn run build
 
-deploy: 
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local_dir: build
-  on:
-    branch: master
+# deploy: 
+#   provider: pages
+#   skip-cleanup: true
+#   github-token: $GITHUB_TOKEN
+#   local_dir: build
+#   on:
+#     branch: master
