@@ -1,19 +1,48 @@
-language: node_js
-node_js:
-  - 11.6.0
-cache: yarn
+language: android
+jdk: oraclejdk8
 
-install: 
-  - yarn install
+components:
+  - tools
+  - tools
+  - platform-tools
+  - extra-google-google-play-services
+  - extra-google-m2repository
+  - extra-android-m2repository
+  - build-tools-25.0.0
+  - android-22
+  - sys-img-armeabi-v7a-android-22
+
+before_install:
+  - yes | sdkmanager "platforms;android-27"
+  - yes | sdkmanager "platforms;android-28"
+
+before_script:
+  - echo no | android create avd -- force -n test -t android-22 --abi armeabi-v7a
+  - emulator avd test -no-audio -no-window &
+  - android-wait-for-emulator
+  - adb shell input keyevent 82 &
 
 script: 
-  - yarn test
-  - yarn run build
+  - ./gradlew assembleDebug
+  - echo "Travis Branch is $TRAVIS_BRANCH"
+  - echo "Travis branch is in pull request $TRAVIS_PULL+REQUEST"
 
-deploy: 
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local_dir: build
-  on:
-    branch: master
+# language: node_js
+# node_js:
+#   - 11.6.0
+# cache: yarn
+
+# install: 
+#   - yarn install
+
+# script: 
+#   - yarn test
+#   - yarn run build
+
+# deploy: 
+#   provider: pages
+#   skip-cleanup: true
+#   github-token: $GITHUB_TOKEN
+#   local_dir: build
+#   on:
+#     branch: master
