@@ -1,10 +1,15 @@
-language: node_js
-node_js:
-  - 7
-cache:
-   npm: false
-# npm test
-make test
+language: javajdf:
+  - openjdk8
+
+script: ./mvnw clean install
+
+# language: node_js
+# node_js:
+#   - 7
+# cache:
+#    npm: false
+# # npm test
+# make test
 # before_install:
 #   - npm i -g npm@version-number
 #   - npm i -g npm@version-number
