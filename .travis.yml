@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - 7
-# cache:
+cache:
 #   npm: false
 # npm test
 # make test
