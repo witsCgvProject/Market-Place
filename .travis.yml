@@ -1,12 +1,23 @@
-language: javajdf:
-  - openjdk8
+sudo: false
 
-script: ./mvnw clean install
+language: node_js
 
-jobs:
-  include: 
-    -stage: Test
-      script: ./mvwn clean test
+node_js:
+  - node
+
+script:
+  - npm run lint
+  - npm test
+
+# language: javajdf:
+#   - openjdk8
+
+# script: ./mvnw clean install
+
+# jobs:
+#   include: 
+#     -stage: Test
+#       script: ./mvwn clean test
 
 # language: node_js
 # node_js:
