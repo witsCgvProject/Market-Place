@@ -3,6 +3,11 @@ language: javajdf:
 
 script: ./mvnw clean install
 
+jobs:
+  include: 
+    -stage: Test
+      script: ./mvwn clean test
+
 # language: node_js
 # node_js:
 #   - 7
