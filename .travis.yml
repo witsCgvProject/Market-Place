@@ -3,7 +3,7 @@ node_js:
   - 7
 # cache:
 #   npm: false
-# npm test
+npm test
 # make test
 
 # before_install:
