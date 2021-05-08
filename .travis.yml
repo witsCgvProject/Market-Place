@@ -1,17 +1,19 @@
-language: java
-jdk:
-- oraclejdk8
-sudo: false
-cache:
-  directories:
-  - $HOME/.m2
-  - $HOME/.gradle
+language: node_js
+node_js:
+  - 7
 
+# npm test
+make test
+
+before_install:
+  - npm i -g npm@version-number
+  - npm i -g npm@version-number
+  - curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version version-number
+  - export PATH="$HOME/.yarn/bin:$PATH"
 before_script:
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - sleep 3
-  
+  - npm install -g gulp-cli
+script: gulp
+
 
 
 # language: node_js
