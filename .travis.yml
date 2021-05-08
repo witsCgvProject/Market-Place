@@ -13,7 +13,7 @@ make test
 #   - export PATH="$HOME/.yarn/bin:$PATH"
 # before_script:
 #   - npm install -g gulp-cli
-# script: gulp
+script: gulp
 
 
 
