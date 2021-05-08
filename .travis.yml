@@ -1,9 +1,9 @@
 language: node_js
 # node_js:
 #   - 7
-cache:
-  npm: false
-npm test
+# cache:
+#   npm: false
+# npm test
 # make test
 
 # before_install:
