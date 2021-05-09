@@ -13,6 +13,7 @@ test('getChange(1,1) should equal [] - an empty array', function(assert) {
   assert.deepEqual(result, expected);
 });
 
+
 test('getChange(215, 300) should return [50, 20, 10, 5]', function(assert) {
   var result = getChange(215, 300); // expect an array containing [50,20,10,5]
   var expected = [50, 20, 10, 5];
