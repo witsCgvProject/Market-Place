@@ -8,9 +8,9 @@ _Group 2 software design project_
 Market place is a web-based application that intends to function similarly to websites such as [Amazon](http://amazon.com/) and [Takealot](https://www.takealot.com/) as an online market place for users to browse and buy products from.
 
 ## Documentation
-For our full documentation check out the project [Wiki](https://github.com/2109688/Market-place/wiki)
+For our full documentation check out the project [Wiki](https://github.com/2153068/Market-Place/wiki)
 
-We have documentation detailing the usage of our system here [Getting Started](https://github.com/2109688/Market-place/wiki/Getting-Started) and after you've created your account we have documentation detailing the usage of the [Homepage](https://github.com/2109688/Market-place/wiki/Home-Page)
+We have documentation detailing the usage of our system here [Getting Started](https://github.com/2153068/Market-Place/wiki/Getting-Started) and after you've created your account we have documentation detailing the usage of the [Homepage](https://github.com/2153068/Market-Place/wiki/Home-Page)
 
 We have detailed documentation going over our [software's design and architecture](https://github.com/2153068/Market-Place/wiki/Software-architecture)
 
