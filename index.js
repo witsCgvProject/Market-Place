@@ -9,8 +9,8 @@ var firebaseConfig = {
   measurementId: "G-EHXK572PE1"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-firebase.auth.Auth.Persistence.LOCAL;
+firebase.initializeApp(firebaseConfig); 
+firebase.auth.Auth.Persistence.LOCAL; 
 
 function login(){
   var email = document.getElementById("email").value;
