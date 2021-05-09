@@ -13,7 +13,7 @@ We have documentation detailing the usage of our system here [Getting Started](h
 
 We have detailed documentation going over our [software's design and architecture](https://github.com/2153068/Market-Place/wiki/Software-architecture)
 
-We also used Taiga for our user stories and backlogs throughout the design of this project. [Taiga](https://tree.taiga.io/project/williambooi-market-place/timeline)
+We also used [Taiga](https://tree.taiga.io/project/williambooi-market-place/timeline) for our user stories and backlogs throughout the design of this project.
 
 ## Installing
 This system was built using JavaScript, HTML and CSS. 
