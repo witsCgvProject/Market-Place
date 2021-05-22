@@ -90,4 +90,7 @@ function logout(){
 
 // document.getElementById("i").innerHTML = 23;
 
-  
+// Code Coverage Testing
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = login;  // Login
+}
