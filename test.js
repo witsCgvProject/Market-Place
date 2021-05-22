@@ -1,12 +1,12 @@
 // /* istanbul ignore next */
-// if (typeof module !== 'undefined' && module.exports) { // check we're server-side
-//   var QUnit = require('qunitjs'); // require QUnit node.js module
-//   // alias the QUnit.test method so we don't have to change all our tests
-//   var test = QUnit.test; // stores a copy of QUnit.test
-//   require('qunit-tap')(QUnit, console.log); // use console.log for test output
-//   var getChange = require('./change.js'); // load our getChange method
-//   var index = require('./index.js');
-// }
+if (typeof module !== 'undefined' && module.exports) { // check we're server-side
+  var QUnit = require('qunitjs'); // require QUnit node.js module
+  // alias the QUnit.test method so we don't have to change all our tests
+  var test = QUnit.test; // stores a copy of QUnit.test
+  require('qunit-tap')(QUnit, console.log); // use console.log for test output
+  var getChange = require('./change.js'); // load our getChange method
+  var index = require('./index.js');
+}
 
 // test('getChange(1,1) should equal [] - an empty array', function(assert) {
 //   var result = getChange(1, 1); //no change/coins just an empty array
