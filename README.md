@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.com/2153068/test.svg?branch=master)](https://travis-ci.com/2153068/Market-Place)
-[![codecov.io](https://img.shields.io/codecov/c/github/dwyl/learn-tdd/master.svg?style=flat-square)](https://app.codecov.io/gh/2153068/Market-Place/commits?page=1)
+[![Build Status](https://travis-ci.com/2153068/Market-Place.svg?branch=master)](https://travis-ci.com/2153068/Market-Place)
+[![codecov](https://codecov.io/gh/2153068/Market-Place/branch/master/graph/badge.svg?token=3LBVNPDVBX)](https://codecov.io/gh/2153068/Market-Place)
+
 
 # Market place
 _Group 2 software design project_
